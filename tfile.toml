@@ -1,0 +1,20 @@
+title = "Пример TOML файла"
+
+[owner]
+name = "Иван Дмитриевич"
+age = 30
+
+[database]
+server = "192.168.1.1"
+ports = [ 8001, 8001, 8002 ]
+connection_max = 5000
+enabled = true
+
+[servers]
+  [servers.alpha]
+  ip = "10.0.0.1"
+  dc = "eu-west"
+
+  [servers.beta]
+  ip = "10.0.0.2"
+  dc = "us-east"

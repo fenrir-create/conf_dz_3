@@ -1,0 +1,23 @@
+begin
+title := Пример TOML файла;
+owner := begin
+name := Иван Дмитриевич;
+age := 30;
+end
+database := begin
+server := 192.168.1.1;
+ports := #( 8001, 8001, 8002 );
+connection_max := 5000;
+enabled := True;
+end
+servers := begin
+alpha := begin
+ip := 10.0.0.1;
+dc := eu-west;
+end
+beta := begin
+ip := 10.0.0.2;
+dc := us-east;
+end
+end
+end
